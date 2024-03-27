@@ -23,15 +23,9 @@ function prependCat(name){
 }
 function removeLastCat(){
 
-let newCats= [...cats]
-newCats.pop();
-return newCats;
-
+return cats.slice(0,2);
 }
 function removeFirstCat() {
 
-  let newCats = [...cats];
- 
-  newCats.shift();
-  return newCats;
+ return cats.slice(1,3);
 }
